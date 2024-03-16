@@ -46,15 +46,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | !     |  "  |  £  |  $  |  %  |     |  ^  |  &  |  *  |  (  |  )  |
-// | CTRL  | LS  | ALT |     |     |     |     | LFT |  UP | RGT |     |
-// | BTCLR | BT1 | BT2 | BT3 | BT4 |     |     |     | DWN |     |     |
-//               | GUI |     | SPC |     | ENT | ESC | TAB |
+// | !     |  "  |  £  |  $  |  %  |     |  ^   |  &  |  *  |  (  |  )  |
+// | CTRL  | LS  | ALT |  _  |  +  |     | HOME | LFT |  UP | RGT | END |
+// | BTCLR | BT1 | BT2 | BT3 | BT4 |     |   |  |  ~  | DWN |  ?  |  ;  |
+//               | GUI |     | SPC |     | ENT  | ESC | TAB |
                         display-name = "Lower";
                         bindings = <
    &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
-   &kp LCTL     &kp LSHIFT   &kp LALT     &trans       &trans           &trans    &kp LEFT  &kp UP          &kp RIGHT &trans 
-   &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3     &trans    &trans    &kp DOWN        &trans    &trans 
+   &kp LCTL     &kp LSHIFT   &kp LALT     &kp UNDER    &kp PLUS         &kp HOME  &kp LEFT  &kp UP          &kp RIGHT &kp END 
+   &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3     &kp PIPE  &kp TILDE &kp DOWN        &kp QMARK &kp SEMI 
                              &kp LGUI     &trans       &kp SPACE        AS(RET)   &kp ESC   &kp TAB
                         >;
                 };
