@@ -18,7 +18,7 @@
     };
 
     behaviors {
-        &lt {
+        lt {
             tapping-term-ms = <150>;
         };
         hr: hold_for_home_row {
