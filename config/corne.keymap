@@ -18,6 +18,9 @@
     };
 
     behaviors {
+        &lt {
+            tapping-term-ms = <150>;
+        };
         hr: hold_for_home_row {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
