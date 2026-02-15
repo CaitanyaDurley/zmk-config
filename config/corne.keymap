@@ -19,7 +19,7 @@
 
     behaviors {
         lt {
-            tapping-term-ms = <150>;
+            flavor = "hold-preferred";
         };
         hr: hold_for_home_row {
             compatible = "zmk,behavior-hold-tap";
